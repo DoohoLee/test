@@ -34,7 +34,6 @@ var server = net.createServer(function (socket) {
     });
              
 });
-
 // 소켓 서버 실행
 var port = 3000;
 server.listen(port);

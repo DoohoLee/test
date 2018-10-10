@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html class="no-js" lang="ko">
+<head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-125257549-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-125257549-1');
+  </script>
+  <meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<title>MORPWARE LCD-BASED SLA, DLP-BASED SLA 3D PRINTER SOFTWARE</title>
+
+	<link rel="stylesheet" href="css/style.css">
+  <link rel="shortcut icon" href="images/icons/title_icon.ico">
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="js/libs/rangeslider.min.js"></script>
+	<script src="js/index.js"></script>
+	<script src="js/three.js"></script>
+  <script src="js/OrbitControls.js"></script>
+	<script src="js/view.js"></script>
+</head>
+<body>
+  <div class="wrap">
+    <header class="header">
+      <div class="header__inner">
+        <h1 class="logo">
+          <a href="">MORPWARE</a>
+        </h1>
+        <button id="btn_logOut" type="button" name="logout">Sign out</button>
+      </div>
+    </header>
+    <main class="main">
+      <div class="main-top">
+        <!-- main-top 수정 -->
+        <div class="main-top-layout">
+          <div class="user">
+          	<a href="#" id="user_chek">test</a><br>
+            <a href="#" id="eml_chek">enbywes@gmail.com</a>
+          </div>
+          <!-- // slicer tools -->
+          <div class="slicer-file">
+            <button id="file_ex" type="button" class="button--default slicer-file__button slicer-file__button--load">Load</button>
+            <input type="file" id="file" style="display: none;">
+            <button id="file_download" type="button" class="button--default slicer-file__button slicer-file__button--save">Save</button>
+            <button id="file_share" type="button" class="button--default slicer-file__button slicer-file__button--share">Share</button>
+          </div>
+        </div>
+        <!-- // main-top 수정 -->
+      </div>
+      <div class="main-contents">
+        <div class="slicer-canvas">
+          <!-- canvas 영역 -->
+          <div class="dummy" id="view"></div>
+          <!-- // canvas 영역 -->
+          <!-- <div class="control_view_dummy" id="control_view"></div> -->
+        </div>
+        <div class="slicer-contents">
+          <!-- slicer tools -->
+          <div class="slicer-tools">
+            <div class="slicer-tool slicer-edit">
+              <!-- active class : slicer-tool__button\-\-active -->
+              <div class="tool1 toolbox">
+                <button type="button" class="slicer-tool__button is-layer slicer-tool__button--move" title="Move"></button>
+                <button type="button" class="slicer-tool__button is-layer slicer-tool__button--rotate" title="Rotate"></button>
+                <button type="button" class="slicer-tool__button is-layer slicer-tool__button--scale" title="Scale"></button>
+                <button type="button" class="slicer-tool__button is-layer slicer-tool__button--support" title="Support"></button>
+                <button type="button" class="slicer-tool__button is-layer slicer-tool__button--duplicate" title="Duplicate"></button>
+              </div>
+              <div class="tool2 toolbox">
+                <button id="wireframe" type="button" class="slicer-tool__button1 is-layer1 slicer-tool__button--wireframe" title="Wireframe"></button>
+                <button id="opacity" type="button" class="slicer-tool__button1 is-layer1 slicer-tool__button--transparent" title="Transparency"></button>
+                <!-- [2018.07.27] slice 아이콘 추가 -->
+                <button id="btn_slice" type="button" class="slicer-tool__button1 is-layer1 slicer-tool__button--slice" title="Slicing"></button>
+                <button id="btn_3D_slice" type="button" class="slicer-tool__button1 is-layer1 slicer-tool__button--3d slicer-tool__button__last" title="Realistic view"></button>
+              </div>
+              <!-- // [2018.07.27] slice 아이콘 추가 -->
+              <div class="slicer-tool-layer edit-tool-layer">
+                <div class="direction"></div>
+                <!-- tool-move -->
+                <div class="slicer-tool-layer__box tool-move">
+                  <h3 class="slicer-tool-layer__top">Move</h3><p class="units">(mm)</p>
+                  <div class="tool-move__form slicer-tool-layer__input">
+                    <div>
+                      <label for="toolMoveX">X</label>
+                      <input id="x_position" name="inputNumber" type="text" class="input" id="toolMoveX" placeholder="1">
+                      <button name="btn_position" id="x" data-val="+" type="button" class="btn-increase" title="Increase X value"></button>
+                      <button name="btn_position" id="x" data-val="-" type="button" class="btn-decrease" title="Decrease X value"></button>
+                    </div>
+                    <div>
+                      <label for="toolMoveY">Y</label>
+                      <input id="y_position" name="inputNumber" type="text" class="input" id="toolMoveY" placeholder="1">
+                      <button name="btn_position" id="y" data-val="+" type="button" class="btn-increase" title="Increase Y value"></button>
+                      <button name="btn_position" id="y" data-val="-" type="button" class="btn-decrease" title="Decrease Y value"></button>
+                    </div>
+                    <div>
+                      <label for="toolMoveZ">Z</label>
+                      <input id="z_position" name="inputNumber" type="text" class="input" id="toolMoveZ" placeholder="1">
+                      <button name="btn_position" id="z" data-val="+" type="button" class="btn-increase" title="Increase Z value"></button>
+                      <button name="btn_position" id="z" data-val="-" type="button" class="btn-decrease" title="Decrease Z value"></button>
+                    </div>
+                  </div>
+                  <button id="gotocenter" type="button" class="button">Go to Center</button>
+                  <button id="gotobottom" type="button" class="button">Go to Bottom</button>
+                  <div class="slicer-tool-layer__bottom">
+                    <button id="move_reset" class="button">Reset</button>
+                  </div>
+                </div>
+                <!-- // tool-move -->
+                <!-- tool-rotate -->
+                <div class="slicer-tool-layer__box tool-rotate">
+                  <h3 class="slicer-tool-layer__top">Rotate</h3><p class="units">(degree)</p>
+                  <div class="tool-rorate__form slicer-tool-layer__input">
+                    <div>
+                      <label for="toolRotateX">X</label>
+                      <input id="x_rotate" name="inputNumber" type="text" class="input" id="toolRotateX" placeholder="90">
+                      <button id="x" name="btn_rotate" data-val="+" type="button" class="btn-increase" title="Increase X value"></button>
+                      <button id="x" name="btn_rotate" data-val="-" class="btn-decrease" title="Decrease X value"></button>
+                    </div>
+                    <div>
+                      <label for="toolRotateY">Y</label>
+                      <input id="y_rotate" name="inputNumber" type="text" class="input" id="toolRotateY" placeholder="90">
+                      <button id="y" name="btn_rotate" data-val="+" type="button" class="btn-increase" title="Increase Y value"></button>
+                      <button id="y" name="btn_rotate" data-val="-" type="button" class="btn-decrease" title="Decrease Y value"></button>
+                    </div>
+                    <div>
+                      <label for="toolRotateZ">Z</label>
+                      <input id="z_rotate" name="inputNumber" type="text" class="input" id="toolRotateZ" placeholder="90">
+                      <button id="z" name="btn_rotate" data-val="+" type="button" class="btn-increase" title="Increase Z value"></button>
+                      <button id="z" name="btn_rotate" data-val="-" type="button" class="btn-decrease" title="Decrease Z value"></button>
+                    </div>
+                  </div>
+                  <div class="slicer-tool-layer__bottom">
+                    <button id="rotate_reset" class="button">Reset</button>
+                  </div>
+                </div>
+                <!-- // tool-rotate -->
+                <!-- // tool-scale -->
+                <!-- tool-scale -->
+                <div class="slicer-tool-layer__box tool-scale">
+                  <h3 class="slicer-tool-layer__top">Scale</h3><p class="units">(%)</p>
+                  <div class="tool-scale__form slicer-tool-layer__input">
+                    <div>
+                      <label for="toolScaleX">X</label>
+                      <input id="x_scale" name="inputNumber" type="text" class="input" id="toolScaleX" placeholder="100">
+                      <button id="btn_scaleX" type="button" class="btn-rotate" title="Scale X"></button>
+                    </div>
+                    <div>
+                      <label for="toolScaleY">Y</label>
+                      <input id="y_scale" name="inputNumber" type="text" class="input" id="toolScaleY" placeholder="100">
+                      <button id="btn_scaleY" type="button" class="btn-rotate" title="Scale Y"></button>
+                    </div>
+                    <div>
+                      <label for="toolScaleZ">Z</label>
+                      <input id="z_scale" name="inputNumber" type="text" class="input" id="toolScaleZ" placeholder="100">
+                      <button id="btn_scaleZ" type="button" class="btn-rotate" title="Scale Z"></button>
+                    </div>
+                  </div>
+                  <div class="slicer-tool-layer__bottom">
+                    <button id="scale_reset" class="button">Reset</button>
+                  </div>
+                </div>
+                <!-- // tool-scale -->
+                <!-- [2018.02.27] tool-support -->
+                <div class="slicer-tool-layer__box tool-support">
+                  <h3 class="slicer-tool-layer__top">Support</h3>
+                  <div id="setsupport" class="tool-support__list">
+                    <!-- active, focus시 class명 : tool-support__item--active -->
+                    <!-- <div class="tool-support__item tool-support__item--active">Support TypeAbdfasdfasdf</div>
+                    <div class="tool-support__item">Support TypeB</div>
+                    <div class="tool-support__item">Support TypeC</div>
+                    <div class="tool-support__item">Support TypeD</div>
+                    <div class="tool-support__item">Support TypeE</div> -->
+                  </div>
+                  <div class="slicer-tool-layer__bottom">
+                    <button id="support_add" class="button btn-add-info">Add</button>
+                    <button id="support_edit" class="button btn-edit-info">Edit</button>
+                    <button id="support_delete" class="button btn-delete">Delete</button>
+                  </div>
+                  <div class="slicer-tool-layer support-info-layer">
+                    <div class="slicer-support-layer tool-support-info">
+                      <h3 class="slicer-tool-layer__top"></h3>
+                      <div class="tool-support-info__form">
+                        <div class="tool-support-info__input">
+                          <label for="">Name</label>
+                          <input id="name" type="text" class="input">
+                        </div>
+                        <div class="tool-support-info__input">
+                          <label for="">Head Radius</label>
+                          <input id="head_dia" type="number" class="input">
+                        </div>
+                        <div class="tool-support-info__input">
+                          <label for="">Head Penetration</label>
+                          <input id="penetration" type="number" class="input">
+                        </div>
+                        <div class="tool-support-info__input">
+                          <label for="">Base Radius</label>
+                          <input id="base_dia" type="number" class="input">
+                        </div>
+                      </div>
+                      <div class="tool-support-info__form div2">
+                        <div class="tool-support-info__input">
+                          <label for="">Types</label>
+                          <select name="" id="support_select_type" class="select">
+                            <option value="0">Model to Floor</option>
+                          </select>
+                        </div>
+                        <div class="tool-support-info__input">
+                          <label for="">Head Length</label>
+                          <input id="head_len" type="number" class="input">
+                        </div>
+                        <div class="tool-support-info__input">
+                          <label for="">Body Radius</label>
+                          <input id="body_dia" type="number" class="input">
+                        </div>
+                        <div class="tool-support-info__input">
+                          <label for="">Base Depth</label>
+                          <input id="base_len" type="number" class="input">
+                        </div>
+                      </div>
+                      <div class="slicer-tool-layer__bottom">
+                        <button id="btn_add" type="button" class="button btn-add"></button>
+                        <!-- <button id="btn_save" type="button" class="button btn-save" style="display:none">Save</button> -->
+                        <button type="button" class="button btn-cancel">Cancel</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- // tool-support -->
+                <!-- tool-duplicate -->
+                <div class="slicer-tool-layer__box tool-duplicate">
+                  <h3 class="slicer-tool-layer__top">Duplicate</h3><p class="units">(ea, mm)</p>
+                  <div class="tool-duplicate__form slicer-tool-layer__input">
+                    <div>
+                      <label for="toolDuplicateQ">Quantity</label>
+                      <input type="text" class="input" id="toolDuplicateQ" placeholder="0">
+                    </div>
+                    <div>
+                      <label for="toolDuplicateD">Distance</label>
+                      <input type="text" class="input" id="toolDuplicateD" placeholder="0">
+                    </div>
+                  </div>
+                  <button id="duplicate" type="button" class="button">Duplicate</button>
+                  <div class="slicer-tool-layer__bottom">
+                    <button id="duplicate_reset" class="button">Reset</button>
+                  </div>
+                </div>
+                <!-- // tool-duplicate -->
+              </div>
+            </div>
+            <div class="slicer-tool slicer-position slicer-positions slicer-tool-a">
+              <div class="dummys"></div>
+              <button id="top" type="button" class="slicer-tool__buttonss slicer-tool__button--top"></button>
+              <button id="back" type="button" class="slicer-tool__buttonss slicer-tool__button--back"></button>
+              <button id="left" type="button" class="slicer-tool__buttonss slicer-tool__button--left"></button>
+              <button id="isometric" type="button" class="slicer-tool__buttonss slicer-tool__button--isometric"></button>
+              <button id="right" type="button" class="slicer-tool__buttonss slicer-tool__button--right"></button>
+              <button id="front" type="button" class="slicer-tool__buttonss slicer-tool__button--front"></button>
+              <button id="bottom" type="button" class="slicer-tool__buttonss slicer-tool__button--bottom"></button>
+              <div class="dummys"></div>
+            </div>
+          </div>
+          <!-- slicer tree -->
+          <div class="slicer-tree">
+            <h3 class="slicer-tree__top">File List</h3>
+            <!-- [2018.07.27] 삭제 아이콘 추가 -->
+            <button id="select_del" type="button" class="slicer-tree__btn-delete" title="선택 삭제"></button>
+            <!-- // [2018.07.27] 삭제 아이콘 추가 -->
+            <div class="slicer-tree__contents">
+              <ul class="slicer-tree__list slicer-tree-depth1__list">
+                <!-- [2018.07.27] : 동적으로 생성되도록 수정 // -->
+              </ul>
+            </div>
+          </div>
+          <!-- slicer range -->
+          <div class="slicer-range">
+            <input
+            id="slice_knife"
+            type="range"
+            min="0"
+            max="250"
+            data-orientation="vertical"
+            disabled>
+          </div>
+          <!-- // slicer range -->
+          <!-- // slicer tree -->
+          <div class="slicer-bottom">
+            <div class="information-area slicing-information">
+              <ul class="information-area__top slicing-information__top" data-slicing-view="-1">
+                <li><button type="button">3D Printer Info</button></li>
+                <li><button type="button">Material Profile</button></li>
+              </ul>
+              <div class="slicing-information__contents">
+                <div class="slicing-3d-view">
+                  <form>
+                    <fieldset>
+                      <legend>프린터 선택</legend>
+                      <div class="printer_set">
+                        <p>3D PRINTER</p>
+                        <select name="printer_set">
+                          <option value="veltz3d_d2-120" selected>Veltz3D D2-120</option>
+                        </select>
+                        <a href="a">Set as default</a>
+                      </div>
+                    </fieldset>
+                  </form>
+                  <div class="slicing-3d-view__info">
+                    <dl class="information-area__display">
+                      <dt>X-Y Resolution</dt>
+                      <dd>62.5um</dd>
+                    </dl>
+                    <dl class="information-area__display">
+                      <dt>Build Size</dt>
+                      <dd>120x67.5x100[mm]</dd>
+                    </dl>
+                  </div>
+                  <form>
+                    <fieldset>
+                      <legend>태그 입력</legend>
+                      <div class="slicing-3d-view__tag">
+                        <label for="slicing3dTag" class="slicing-3d-view__tag-label">Tag</label>
+                        <div class="slicing-3d-view__tag-input">
+                          <input type="text" class="input" id="slicing3dTag" required readonly placeholder="Tag name" title="아직 준비중인 기능입니다.">
+                          <button class="button btn_apply" disabled title="아직 준비중인 기능입니다.">Apply</button>
+                        </div>
+                        <div class="slicing-3d-view__tag-list" title="아직 준비중인 기능입니다.">
+                          <!-- <span class="tag">Tag name <button type="button" title="Click to Delete"></button></span>
+                          <span class="tag">Tag name <button type="button" title="Click to Delete"></button></span>
+                          <span class="tag">Tag name <button type="button" title="Click to Delete"></button></span>
+                          <span class="tag">Tag name <button type="button" title="Click to Delete"></button></span> -->
+                        </div>
+                      </div>
+                    </fieldset>
+                  </form>
+                </div>
+                <!-- // slicing 3d view -->
+                <div class="setup-view">
+                  <div class="material_set">
+                    <form>
+                      <fieldset>
+                        <legend>소재 선택</legend>
+                        <p>MATERIAL PROFILE</p>
+                        <select name="material_set">
+                          <option value="high_quality">High quality (Mock-up)</option>
+                        </select>
+                        <a href="a">Set as default</a>
+                      </fieldset>
+                    </form>
+                  </div>
+                  <div class="mtrl_prfl">
+                    <p class="profile_description">PROFILE DESCRIPTION</p>
+                    <div>
+                      <dl class="information-area__display">
+                        <dt>Material name</dt>
+                        <dd>Veltz3D Clear Resin</dd>
+                      </dl>
+                      <dl class="information-area__display">
+                        <dt>Average layer build time</dt>
+                        <dd>14secs</dd>
+                      </dl>
+                      <dl class="information-area__display">
+                        <dt>Slice thickness</dt>
+                        <dd>35um</dd>
+                      </dl>
+                    </div>
+                    <div>
+                      <dl class="information-area__display">
+                        <dt>Exposure time</dt>
+                        <dd>3secs</dd>
+                      </dl>
+                      <dl class="information-area__display">
+                        <dt>Exposure time(bottom)</dt>
+                        <dd>12secs</dd>
+                      </dl>
+                      <dl class="information-area__display">
+                        <dt>Bottom layers</dt>
+                        <dd>6</dd>
+                      </dl>
+                      <dl class="information-area__display">
+                        <dt>Z lift distance</dt>
+                        <dd>5mm</dd>
+                      </dl>
+                      <dl class="information-area__display">
+                        <dt>Z lift speed</dt>
+                        <dd>100mm/min</dd>
+                      </dl>
+                      <dl class="information-area__display">
+                        <dt>Z lift speed(bottom)</dt>
+                        <dd>40mm/min</dd>
+                      </dl>
+                      <dl class="information-area__display">
+                        <dt>Retraction speed</dt>
+                        <dd>50mm/min</dd>
+                      </dl>
+                    </div>
+                  </div>
+                </div>
+                <!-- // setup view -->
+              </div>
+            </div>
+            <div class="information-area file-information">
+              <ul class="information-area__top file-information__top">
+                <li>
+                  <button type="button">File Information</button>
+                </li>
+              </ul>
+              <div class="file-information__contents">
+               <!--  <form> -->
+                  <fieldset>
+                    <legend>file information form</legend>
+                    <div class="file-information__form">
+                      <div class="file-information__input">
+                        <p>Size</p>
+                        <div class="input-box">
+                          <label for="sizeX">X</label>
+                          <input type="text" class="input" id="sizeX" value="000" readonly="readonly">
+                        </div>
+                        <div class="input-box">
+                          <label for="sizeY">Y</label>
+                          <input type="text" class="input" id="sizeY" value="000" readonly="readonly">
+                        </div>
+                        <div class="input-box">
+                          <label for="sizeZ">Z</label>
+                          <input type="text" class="input" id="sizeZ" value="000" readonly="readonly">
+                        </div>
+                      </div>
+                      <div class="file-information__input">
+                        <p>Location</p>
+                        <div class="input-box">
+                          <label for="locationX">X</label>
+                          <input type="text" class="input" id="locationX" value="000" readonly="readonly">
+                        </div>
+                        <div class="input-box">
+                          <label for="locationY">Y</label>
+                          <input type="text" class="input" id="locationY" value="000" readonly="readonly">
+                        </div>
+                        <div class="input-box">
+                          <label for="locationZ">Z</label>
+                          <input type="text" class="input" id="locationZ" value="000" readonly="readonly">
+                        </div>
+                      </div>
+                      <div class="file-information__input">
+                        <p>Rotation</p>
+                        <div class="input-box">
+                          <label for="rotaionX">X</label>
+                          <input type="text" class="input" id="rotaionX" value="000" readonly="readonly">
+                        </div>
+                        <div class="input-box">
+                          <label for="rotaionY">Y</label>
+                          <input type="text" class="input" id="rotaionY" value="000" readonly="readonly">
+                        </div>
+                        <div class="input-box">
+                          <label for="rotaionZ">Z</label>
+                          <input type="text" class="input" id="rotaionZ" value="000" readonly="readonly">
+                        </div>
+                      </div>
+                      <div class="file-information__input">
+                        <p>Scale(%)</p>
+                        <div class="input-box">
+                          <label for="scaleX">X</label>
+                          <input type="text" class="input" id="scaleX" value="000" readonly="readonly">
+                        </div>
+                        <div class="input-box">
+                          <label for="scaleY">Y</label>
+                          <input type="text" class="input" id="scaleY" value="000" readonly="readonly">
+                        </div>
+                        <div class="input-box">
+                          <label for="scaleZ">Z</label>
+                          <input type="text" class="input" id="scaleZ" value="000" readonly="readonly">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="file-information__btn">
+                      <button id="all_reset" class="button">Reset</button>
+                      <button class="button">Apply</button>
+                    </div>
+                  </fieldset>
+                <!-- </form> -->
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- // slicer-contents -->
+      </div>
+      <!-- // main-contents -->
+    </main>
+  </div>
+</body>
+</html>

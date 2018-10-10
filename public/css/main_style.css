@@ -1,0 +1,1523 @@
+
+
+@import url("https://fonts.googleapis.com/earlyaccess/notosanskr.css");
+
+@media (max-width: 640px) {
+  div.main {
+    height: 130vw;
+  }
+
+  div.header {
+    height: 50px;
+  }
+
+  .layout {
+    width: auto;
+    height: inherit;
+
+    margin: 0px 50px 0px 50px;
+  }
+
+  .logo_morpware_hor {
+    width: 33px;
+    margin-top: 8.5px;
+
+    background-size: cover;
+    background-position: left;
+  }
+
+  .btn_signin {
+    width: 60px;
+    margin-top: 12.5px;
+  }
+
+  div.main_txt {
+    margin-top: 10vw;
+  }
+
+  .morpware_icon {
+    width: 26.56vw;
+    height: 29.76vw;
+  }
+
+  h1.main {
+    font-size: 10vw;
+    line-height: 10vw;
+
+    margin-top: 2vw;
+  }
+
+  h2.main {
+    font-size: 3.6vw;
+    line-height: 1vw;
+  }
+
+  p.main_mobile {
+    font-size: 12px;
+    line-height: 20px;
+
+    margin-top: 10vw;
+  }
+
+  p.main {
+    font-size: 0;
+    line-height: 0;
+  }
+
+  div.bar {
+    height: 2vw;
+  }
+
+  div.tech {
+    width: 100%;
+    padding-top: 50px;
+  }
+
+  div.slc {
+    padding-top: 56.4019vw;
+    background-image: url("../images/layouts/3dms_mobile.png");
+    background-position: top;
+    background-size: contain;
+  }
+
+  div.slc_txt {
+    width: 100%;
+  }
+
+  h3.tech {
+    font-size: 70%;
+    line-height: 0;
+
+    margin-top: 20px;
+  }
+
+  h2.tech {
+    font-size: 24px;
+    line-height: 24px;
+  }
+
+  p.kor {
+    font-size: 12px;
+    line-height: 18px;
+
+    margin-top: 8vw;
+  }
+
+  p.eng {
+    font-size: 12px;
+    line-height: 18px;
+
+    margin-bottom: 0;
+  }
+
+  div.cms {
+    padding-top: 56.4019vw;
+    background-image: url("../images/layouts/3dcms_mobile.png");
+    background-position: top;
+    background-size: contain;
+  }
+
+  div.cms_txt {
+    width: 100%;
+  }
+
+  div.imgs_slc {
+    width: 100%;
+  }
+
+  div.imgs_slc_a {
+    padding-top: 63.6364%;
+  }
+
+  h4.imgs {
+    font-size: 70%;
+  }
+
+  p.imgs {
+    font-size: 12px;
+    line-height: 16px;
+
+    margin: 0;
+  }
+
+  .layout .line {
+    width: 100%;
+    height: 1px;
+
+    margin: 50px 0;
+
+    background-color: rgba(211, 211, 211, 0.56);
+  }
+
+  div.imgs_anl {
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  div.imgs_anl_a {
+    padding-top: 63.6364%;
+  }
+
+  div.imgs_cms {
+    width: 100%;
+    margin-top: 10vw;
+  }
+
+  div.imgs_cms_a {
+    padding-top: 63.6364%;
+  }
+
+  .layout_ptn {
+    width: auto;
+    height: inherit;
+
+    margin: 0px 50px 0px 50px;
+  }
+
+  p.ptn {
+    font-size: 24px;
+    line-height: 24px;
+
+    margin: 0;
+    padding-bottom: 3vw;
+  }
+
+  div.logo_ptn {
+    margin-bottom: 50px;
+  }
+
+  .nano {
+    width: 13.3333%;
+    padding-top: 8.6957%;
+
+    margin-right: 2.6087%;
+  }
+
+  .ryujinlab {
+    width: 27.2464%;
+    padding-top: 8.6957%;
+
+    margin-right: 2.6087%;
+  }
+
+  .illuminaid {
+    width: 22.8986%;
+    padding-top: 8.6957%;
+
+    margin-right: 2.6087%;
+  }
+
+  .gooo3d {
+    width: 28.6957%;
+    padding-top: 8.6957%;
+  }
+
+  div.send_msg {
+    padding-bottom: 50px;
+  }
+
+  div.morpware_vtc {
+    width: 60%;
+    padding-top: 9.82%;
+
+    margin: 0 auto;
+
+    background-image: url("../images/logos/morpware_hor_a.png");
+  }
+
+  div.input {
+    width: 100%;
+    font-size: 12px;
+
+    margin-top: 3vw;
+  }
+
+  input.send {
+    width: 100%;
+    height: 40px;
+
+    box-sizing: border-box;
+
+    padding-left: 2.1739vw;
+    margin-bottom: 1.4493vw;
+
+    border-radius: 3px;
+  }
+
+  textarea {
+    width: 100%;
+    height: 100px;
+
+    box-sizing: border-box;
+
+    padding: 2.1739vw 0px 0px 2.1739vw;
+    margin-bottom: 2.8986vw;
+
+    border-radius: 3px;
+  }
+
+  input[value='Send Message'] {
+    width: 150px;
+    height: 40px;
+
+    border-radius: 3px;
+
+    font-size: 12px;
+  }
+
+  div.footer {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  div.nav {
+    width: 50%;
+    min-width: 230px;
+  }
+
+  ul.nav {
+    margin: 0px 0px 18px 0px;
+
+    font-size: 12px;
+  }
+
+  li {
+    margin-top: 4px;
+    line-height: 16px;
+  }
+
+  ul.nav li {
+    margin: 0 0 8px 0;
+  }
+
+  .metamorp {
+    width: 120px;
+    height: 35px;
+  }
+
+  div.info {
+    width: 50%;
+    min-width: 230px;
+    margin-bottom: 20px;
+  }
+
+  h5 {
+    font-size: 12px;
+    line-height: 16px;
+  }
+
+  ul.info {
+    margin-bottom: 20px;
+    font-size: 12px;
+  }
+
+  div.subscribe {
+    width: 100%;
+    min-width: 220px;
+    float: left;
+    text-align: center;
+  }
+
+  h4.subscribe {
+    font-size: 14px;
+    line-height: 18px;
+    white-space: nowrap;
+  }
+
+  p.subscribe {
+    font-size: 12px;
+    line-height: 12px;
+    margin: 0px 0px 5px 0px;
+  }
+
+  input.subscribe {
+    width: 65.4545%;
+    min-width: 144px;
+    max-width: 238px;
+    height: 40px;
+
+    box-sizing: border-box;
+
+    font-size: 12px;
+    padding-left: 15px;
+  }
+
+  input[value=Subscribe] {
+    width: 76px;
+    height: 40px;
+
+    font-size: 12px;
+
+    margin: 20px 0px 20px 0px;
+  }
+
+  div.icons {
+    width: 70px;
+    height: 30px;
+    margin: 0 auto;
+  }
+  /*紐⑤컮�씪 踰꾩쟾 �쎒*/
+}
+
+@media (min-width: 641px) and (max-width: 960px) {
+  /*�깭釉붾┸PC 踰꾩쟾 �쎒*/
+  div.main {
+    height: 48.6111vw;
+  }
+
+  div.header {
+    height: 70px;
+  }
+
+  .layout {
+    width: auto;
+    height: inherit;
+
+    margin: 0px 75px 0px 75px;
+  }
+
+  .logo_morpware_hor {
+    width: 202px;
+    margin-top: 18.5px;
+
+    background-size: contain;
+    background-position: center;
+  }
+
+  .btn_signin {
+    width: 70px;
+    margin-top: 22.5px;
+  }
+
+  div.main_txt {
+    margin-top: 2vw;
+  }
+
+  .morpware_icon {
+    width: 5.7639vw;
+    height: 6.4583vw;
+  }
+
+  h1.main {
+    font-size: 3.4722vw;
+    line-height: 3.4722vw;
+
+    margin-top: 1.5278vw;
+  }
+
+  h2.main {
+    font-size: 2.0833vw;
+    line-height: 2.0833vw;
+
+    margin-top: 2.2222vw;
+  }
+
+  p.main_mobile {
+    font-size: 0;
+    line-height: 0;
+  }
+
+  p.main {
+    font-size: 1.25vw;
+    line-height: 1.875vw;
+
+    margin-top: 5.2778vw;
+  }
+
+  div.bar {
+    height: 3vw;
+    margin-bottom: 3.4722vw;
+  }
+
+  div.tech {
+    width: 100%;
+    padding-top: 6.9444vw;
+  }
+
+  div.slc {
+    height: 24.1667vw;
+    background-image: url("../images/layouts/3dms.png");
+    background-position: center;
+    background-size: cover;
+  }
+
+  div.slc_txt {
+    width: 55%;
+  }
+
+  h3.tech {
+    font-size: 1.7361vw;
+    line-height: 1.3889vw;
+    margin-top: 0;
+  }
+
+  h2.tech {
+    font-size: 2.7778vw;
+    line-height: 1.3889vw;
+  }
+
+  p.kor {
+    font-size: 1.25vw;
+    line-height: 1.875vw;
+
+    margin-top: 3.6111vw;
+  }
+
+  p.eng {
+    font-size: 1.25vw;
+    line-height: 1.875vw;
+  }
+
+  div.cms {
+    height: 24.1667vw;
+    background-image: url("../images/layouts/3dcms.png");
+    background-position: center;
+    background-size: cover;
+  }
+
+  div.cms_txt {
+    width: 55%;
+    float: right;
+  }
+
+  .imgs .line {
+    width: 100%;
+    height: 1px;
+
+    margin: 6.944vw 0;
+
+    background-color: rgba(211, 211, 211, 0.56);
+  }
+
+  div.imgs_slc {
+    width: 30%;
+    margin-right: 5%;
+  }
+
+  div.imgs_slc_a {
+    padding-top: 63.6364%;
+  }
+
+  h4.imgs {
+    font-size: 1.1111vw;
+    white-space: nowrap;
+  }
+
+  p.imgs {
+    font-size: 1.1111vw;
+    line-height: 1.6667vw;
+  }
+
+  div.imgs_anl {
+    width: 30%;
+  }
+
+  div.imgs_anl_a {
+    padding-top: 63.6364%;
+  }
+
+  div.imgs_cms {
+    width: 30%;
+    margin-right: 5%;
+  }
+
+  div.imgs_cms_a {
+    padding-top: 63.6364%;
+  }
+
+  .layout_ptn {
+    width: auto;
+    height: inherit;
+
+    margin: 0px 75px 0px 75px;
+  }
+
+  p.ptn {
+    font-size: 2.7778vw;
+    line-height: 1.3889vw;
+  }
+
+  div.logo_ptn {
+    padding: 6.9444vw 0px 3.4722vw 0px;
+  }
+
+  .nano {
+    width: 13.3333%;
+    padding-top: 8.6957%;
+
+    margin-right: 2.6087%;
+  }
+
+  .ryujinlab {
+    width: 27.2464%;
+    padding-top: 8.6957%;
+
+    margin-right: 2.6087%;
+  }
+
+  .illuminaid {
+    width: 22.8986%;
+    padding-top: 8.6957%;
+
+    margin-right: 2.6087%;
+  }
+
+  .gooo3d {
+    width: 28.6957%;
+    padding-top: 8.6957%;
+  }
+
+  div.send_msg {
+    padding-bottom: 14.4928vw;
+  }
+
+  div.morpware_vtc {
+    width: 30%;
+    padding-top: 25.3368%;
+
+    float: left;
+
+    background-image: url("../images/logos/morpware_vtc.png");
+  }
+
+  div.input {
+    width: 65%;
+    font-size: 10px;
+  }
+
+  input.send {
+    width: 100%;
+    height: 40px;
+
+    box-sizing: border-box;
+
+    padding-left: 15px;
+    margin-bottom: 1.4493vw;
+
+    border-radius: 3px;
+  }
+
+  textarea {
+    width: 100%;
+    height: 100px;
+
+    box-sizing: border-box;
+
+    padding: 12px 0px 0px 15px;
+    margin-bottom: 2.8986vw;
+
+    border-radius: 3px;
+  }
+
+  input[value='Send Message'] {
+    width: 150px;
+    height: 40px;
+
+    border-radius: 3px;
+
+    font-size: 12px;
+  }
+
+  div.footer {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  div.nav {
+    width: 50%;
+  }
+
+  ul.nav {
+    font-size: 12px;
+    margin: 0;
+  }
+
+  li {
+    margin-top: 4px;
+    line-height: 16px;
+    white-space: nowrap;
+  }
+
+  ul.nav li {
+    margin: 0 0 8px 0;
+  }
+
+  .metamorp {
+    width: 120px;
+    height: 35px;
+  }
+
+  div.info {
+    width: 50%;
+    margin-bottom: 3vw;
+  }
+
+  h5 {
+    font-size: 12px;
+    line-height: 16px;
+  }
+
+  ul.info {
+    margin-bottom: 20px;
+    font-size: 12px;
+  }
+
+  div.subscribe {
+    width: 100%;
+    min-width: 220px;
+    float: left;
+    text-align: center;
+  }
+
+  h4.subscribe {
+    font-size: 14px;
+    line-height: 18px;
+    white-space: nowrap;
+  }
+
+  p.subscribe {
+    font-size: 12px;
+    line-height: 12px;
+    margin: 0px 0px 5px 0px;
+  }
+
+  input.subscribe {
+    width: 65.4545%;
+    min-width: 144px;
+    max-width: 238px;
+    height: 40px;
+
+    box-sizing: border-box;
+
+    font-size: 12px;
+    padding-left: 15px;
+  }
+
+  input[value=Subscribe] {
+    width: 76px;
+    height: 40px;
+
+    font-size: 12px;
+
+    margin: 20px 0px 20px 0px;
+  }
+
+  div.icons {
+    width: 70px;
+    height: 30px;
+    margin: 0 auto;
+  }
+  /*�깭釉붾┸PC 踰꾩쟾 �쎒*/
+}
+
+@media (min-width: 961px) {
+  /*PC 踰꾩쟾 �쎒*/
+  div.wrap {
+    max-width: 1440px;
+    min-width: 1100px;
+
+    box-shadow: 0px 0px 100px #87bbbe;
+  }
+
+  div.main {
+    height: 700px;
+  }
+
+  div.header {
+    height: 70px;
+  }
+
+  .layout {
+    width: 1050px;
+    height: inherit;
+
+    margin: 0 auto;
+  }
+
+  .logo_morpware_hor {
+    width: 202px;
+    margin-top: 18.5px;
+
+    background-size: contain;
+    background-position: center;
+  }
+
+  .btn_signin {
+    width: 70px;
+    margin-top: 22.5px;
+  }
+
+  div.main_txt {
+    margin-top: 100px;
+  }
+
+  .morpware_icon {
+    width: 83px;
+    height: 93px;
+  }
+
+  h1.main {
+    font-size: 50px;
+    line-height: 50px;
+
+    margin-top: 22px;
+  }
+
+  h2.main {
+    font-size: 30px;
+    line-height: 30px;
+
+    margin-top: 32px;
+  }
+
+  p.main_mobile {
+    font-size: 0;
+    line-height: 0;
+  }
+
+  p.main {
+    font-size: 18px;
+    line-height: 27px;
+
+    margin-top: 76px;
+  }
+
+  div.bar {
+    height: 20px;
+    margin-bottom: 50px;
+  }
+
+  div.tech {
+    width: 100%;
+    padding-top: 100px;
+  }
+
+  div.slc {
+    height: 348px;
+    background-image: url("../images/layouts/3dms.png");
+    background-position: center;
+    background-size: cover;
+  }
+
+  div.slc_txt {
+    width: 598px;
+  }
+
+  h3.tech {
+    font-size: 25px;
+    line-height: 20px;
+  }
+
+  h2.tech {
+    font-size: 40px;
+    line-height: 20px;
+  }
+
+  p.kor {
+    font-size: 18px;
+    line-height: 27px;
+
+    margin-top: 52px;
+  }
+
+  p.eng {
+    font-size: 18px;
+    line-height: 27px;
+  }
+
+  div.cms {
+    height: 348px;
+    background-image: url("../images/layouts/3dcms.png");
+    background-position: center;
+    background-size: cover;
+  }
+
+  div.cms_txt {
+    width: 598px;
+    margin-left: 452px;
+  }
+
+  .imgs .line {
+    width: 1050px;
+    height: 1px;
+
+    margin: 150px auto;
+
+    background-color: rgba(211, 211, 211, 0.56);
+  }
+
+  div.imgs_slc {
+    width: 330px;
+    margin-right: 30px;
+  }
+
+  div.imgs_slc_a {
+    height: 210px;
+  }
+
+  h4.imgs {
+    font-size: 16px;
+  }
+
+  p.imgs {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  div.imgs_anl {
+    width: 330px;
+  }
+
+  div.imgs_anl_a {
+    height: 210px;
+  }
+
+  div.imgs_cms {
+    width: 330px;
+    margin-right: 30px;
+  }
+
+  div.imgs_cms_a {
+    height: 210px;
+  }
+
+  .layout_ptn {
+    width: 690px;
+    height: inherit;
+
+    margin: 0 auto;
+  }
+
+  p.ptn {
+    font-size: 25px;
+    line-height: 20px;
+  }
+
+  div.logo_ptn {
+    padding: 100px 0px 50px 0px;
+  }
+
+  .nano {
+    width: 92px;
+    height: 60px;
+
+    margin-right: 18px;
+  }
+
+  .ryujinlab {
+    width: 188px;
+    height: 60px;
+
+    margin-right: 18px;
+  }
+
+  .illuminaid {
+    width: 158px;
+    height: 60px;
+
+    margin-right: 18px;
+  }
+
+  .gooo3d {
+    width: 198px;
+    height: 60px;
+  }
+
+  div.send_msg {
+    padding-bottom: 100px;
+  }
+
+  div.morpware_vtc {
+    width: 193px;
+    height: 163px;
+
+    float: left;
+
+    background-image: url("../images/logos/morpware_vtc.png");
+  }
+
+  div.input {
+    width: 420px;
+    font-size: 10px;
+  }
+
+  input.send {
+    width: 403px;
+    height: 38px;
+
+    padding-left: 15px;
+    margin-bottom: 10px;
+
+    border-radius: 3px;
+  }
+
+  textarea {
+    width: 403px;
+    height: 83px;
+
+    padding: 15px 0px 0px 15px;
+    margin-bottom: 20px;
+
+    border-radius: 3px;
+  }
+
+  input[value='Send Message'] {
+    width: 150px;
+    height: 40px;
+
+    border-radius: 3px;
+
+    font-size: 12px;
+  }
+
+  div.footer {
+    padding-top: 80px;
+    padding-bottom: 30px;
+  }
+
+  div.nav {
+    width: 330px;
+  }
+
+  ul.nav {
+    font-size: 12px;
+    line-height: 18px;
+    margin: 0;
+  }
+
+  li {
+    margin-top: 8px;
+  }
+
+  ul.nav li {
+    margin: 0 0 8px 0;
+  }
+
+  .metamorp {
+    width: 120px;
+    height: 35px;
+  }
+
+  div.info {
+    width: 390px;
+    margin-bottom: 22px;
+  }
+
+  h5 {
+    font-size: 12px;
+    line-height: 12px;
+  }
+
+  ul.info {
+    margin: 6px 0px 24px 0px;
+    font-size: 12px;
+    line-height: 18px;
+  }
+
+  div.subscribe {
+    width: 330px;
+    float: left;
+  }
+
+  h4.subscribe {
+    font-size: 14px;
+    line-height: 14px;
+    margin: 0px 0px 20px 0px;
+  }
+
+  p.subscribe {
+    font-size: 12px;
+    line-height: 12px;
+    margin: 0px 0px 5px 0px;
+  }
+
+  input.subscribe {
+    width: 238px;
+    height: 36px;
+    font-size: 12px;
+    padding-left: 15px;
+  }
+
+  input[value=Subscribe] {
+    width: 76px;
+    height: 40px;
+
+    font-size: 12px;
+
+    margin: 22px 0px 20px 0px;
+  }
+}
+
+body {
+  margin: 0;
+  padding: 0;
+
+  background-color: #bbd7d9;
+
+  font-family: 'Noto Sans KR';
+}
+
+div.wrap {
+  width: 100%;
+  height: auto;
+
+  margin: 0 auto;
+
+  background-color: #fff;
+}
+
+div.main {
+  width: 100%;
+
+  background-image: url("../images/layouts/main_image.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+div.main_cover {
+  width: 100%;
+  height: inherit;
+
+  float: left;
+
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+div.header {
+  width: 100%;
+}
+
+.logo_morpware_hor {
+  height: 33px;
+
+  float: left;
+
+  background-image: url("../images/logos/morpware_hor.png");
+  background-repeat: no-repeat;
+}
+
+.btn_signin {
+  height: 25px;
+
+  float: right;
+
+  border: 1px solid #fff;
+  border-radius: 3px;
+
+  font-size: 14px;
+  line-height: 23px;
+  color: #fff;
+  text-align: center;
+
+  user-select: none;
+  cursor: pointer;
+}
+
+.btn_signin:hover {
+  background-color: #fff;
+  color: #515151;
+}
+
+div.main_txt {
+  width: inherit;
+
+  float: left;
+
+  color: #fff;
+  text-align: center;
+
+  user-select: none;
+}
+
+.morpware_icon {
+  margin: 0 auto;
+
+  background-image: url("../images/logos/morpware_icon.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+h1.main, h2.main {
+  font-weight: normal;
+}
+
+p.main_mobile {
+  opacity: 0.8;
+}
+
+p.main {
+  opacity: 0.8;
+}
+
+div.bar {
+  width: 100%;
+
+  background-color: #3f8284;
+}
+
+div.slc {
+  width: 100%;
+  background-repeat: no-repeat;
+}
+
+div.slc_txt {
+  height: auto;
+}
+
+h3.tech {
+  color: #3f8284;
+  font-weight: normal;
+  opacity: 0.8;
+}
+
+h2.tech {
+  color: #3f8284;
+  font-weight: 600;
+
+  margin: 0;
+}
+
+p.kor {
+  opacity: 0.7;
+}
+
+p.eng {
+  color: #3f8284;
+  opacity: 0.7;
+}
+
+span {
+  font-weight: bolder;
+}
+
+div.cms {
+  width: 100%;
+  background-repeat: no-repeat;
+}
+
+div.cms_txt {
+  height: inherit;
+}
+
+div.imgs {
+  width: 100%;
+}
+
+.layout:after {
+  display: block;
+  content: '';
+  clear: both;
+}
+
+div.imgs_slc {
+  height: auto;
+  float: left;
+}
+
+div.imgs_slc_a {
+  width: 100%;
+
+  background-image: url("../images/layouts/3d_model_slicer.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+h4.imgs {
+  line-height: 0px;
+  opacity: 0.7;
+  font-weight: normal;
+  padding: 0 10px;
+}
+
+p.imgs {
+  opacity: 0.4;
+  font-weight: normal;
+  padding: 0 10px;
+}
+
+div.imgs_anl {
+  height: auto;
+  float: left;
+}
+
+div.imgs_anl_a {
+  width: 100%;
+
+  background-image: url("../images/layouts/3d_model_data_analysis.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.imgs_rad {
+  border-radius: 5px;
+  box-shadow: 0 0 10px #ccc;
+}
+
+div.imgs_cms {
+  height: auto;
+  float: left;
+}
+
+div.imgs_cms_a {
+  width: 100%;
+
+  background-image: url("../images/layouts/3d_system.png");
+  background-repeat: no-repeat;
+  background-position: left;
+  background-size: cover;
+}
+
+div.clear {
+  width: 100%;
+  height: 1px;
+  clear: both;
+}
+
+div.ptn {
+  width: 100%;
+  height: auto;
+
+  border-bottom: 1px solid rgba(143, 130, 132, 0.3);
+}
+
+p.ptn {
+  font-weight: bolder;
+  text-align: center;
+  user-select: none;
+  opacity: 0.56;
+}
+
+div.logo_ptn {
+  width: 100%;
+  height: auto;
+}
+
+div.logo_ptn:after {
+  clear: both;
+  content: '';
+  display: block;
+}
+
+.nano {
+  float: left;
+
+  background-image: url("../images/logos/nano.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+.ryujinlab {
+  float: left;
+
+  background-image: url("../images/logos/ryujinlab.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+.illuminaid {
+  float: left;
+
+  background-image: url("../images/logos/illuminaid.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+.gooo3d {
+  float: left;
+
+  background-image: url("../images/logos/gooo3d.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+div.send_msg:after {
+  clear: both;
+  display: block;
+  content: '';
+}
+
+div.morpware_vtc {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+div.input {
+  height: auto;
+  float: right;
+}
+
+input.send {
+  border: 1px solid #d3d3d3;
+
+  font: inherit;
+}
+
+textarea {
+  resize: none;
+
+  border: 1px solid #d3d3d3;
+
+  font: inherit;
+  white-space: normal;
+}
+
+input[value='Send Message'] {
+  float: right;
+
+  background-color: #3f8284;
+  border: none;
+
+  color: #fff;
+
+  cursor: pointer;
+}
+
+input[value='Send Message']:hover {
+  background-color: #399;
+}
+
+div.footer {
+  width: 100%;
+  height: auto;
+
+  flex-wrap: nowrap;
+}
+
+div.footer_top {
+  width: 100%;
+  height: auto;
+}
+
+div.footer_top:after {
+  clear: both;
+  display: block;
+  content: '';
+}
+
+div.nav {
+  height: auto;
+
+  float: left;
+}
+
+ul.nav {
+  list-style: none;
+  padding: 0;
+
+  color: rgba(0, 0, 0, 0.4);
+}
+
+.metamorp {
+  background-image: url("../images/logos/metamorp.png");
+  background-position: left;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+a {
+  cursor: pointer;
+}
+
+div.info {
+  height: auto;
+
+  float: left;
+}
+
+h5 {
+  font-weight: normal;
+  color: #000;
+  opacity: 0.7;
+
+  margin: 0;
+}
+
+ul.info {
+  list-style: none;
+  padding: 0;
+  color: #000;
+  opacity: 0.4;
+}
+
+div.subscribe {
+  height: auto;
+}
+
+h4.subscribe {
+  font-weight: bold;
+  color: #3f8284;
+}
+
+p.subscribe {
+  font-weight: normal;
+  color: #000;
+  opacity: 0.4;
+}
+
+input.subscribe {
+  border-top: 1px solid #d3d3d3;
+  border-right: none;
+  border-bottom: 1px solid #d3d3d3;
+  border-left: 1px solid #d3d3d3;
+  border-radius: 3px 0px 0px 3px;
+}
+
+input[value=Subscribe] {
+  border: none;
+  border-radius: 0px 3px 3px 0px;
+  background-color: #3f8284;
+
+  color: #fff;
+
+  cursor: pointer;
+}
+
+input[value=Subscribe]:hover {
+  background-color: #399;
+}
+
+div.icon_facebook {
+  width: 30px;
+  height: 30px;
+
+  margin-right: 10px;
+  float: left;
+
+  background-image: url("../images/icons/icon_facebook.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+
+  cursor: pointer;
+}
+
+div.icon_facebook:hover {
+  background-image: url("../images/icons/icon_facebook_hover.png");
+}
+
+div.icon_instagram {
+  width: 30px;
+  height: 30px;
+
+  float: left;
+
+  background-image: url("../images/icons/icon_instagram.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+
+  cursor: pointer;
+}
+
+div.icon_instagram:hover {
+  background-image: url("../images/icons/icon_instagram_hover.png");
+}

@@ -1,16 +1,20 @@
 {
-  "name": "socket",
+  "name": "o2",
   "version": "1.0.0",
   "description": "",
-  "main": "server.js",
+  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.16.3",
+    "body-parser": "^1.18.3",
+    "ejs": "^2.6.1",
+    "mysql": "^2.16.0",
     "net": "^1.0.2",
+    "nodemailer": "^4.6.8",
+    "pm2": "^3.2.2",
     "socket.io": "^2.1.1"
   }
 }

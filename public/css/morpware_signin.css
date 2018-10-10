@@ -1,0 +1,378 @@
+
+
+@import url("https://fonts.googleapis.com/earlyaccess/notosanskr.css");
+
+body {
+  margin: 0;
+  padding: 0;
+
+  background-color: #000;
+  background-image: url("../images/layouts/bg_signin.png");
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: auto;
+
+  font-family: 'Noto Sans KR';
+}
+
+.header {
+  width: 100%;
+  height: 70px;
+}
+
+.header_inner {
+  width: 100%;
+  max-width: 1100px;
+  height: 100%;
+
+  margin: 0 auto;
+  padding: 0 50px;
+  box-sizing: border-box;
+}
+
+.logo {
+  color: rgba(0, 0, 0, 0);
+  user-select: none;
+}
+
+h1 {
+  width: 202px;
+  height: 33px;
+
+  float: left;
+  margin: 18.5px 0 0 0;
+
+  background-image: url("../images/logos/morpware_hor.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.wrap {
+  width: 100%;
+  height: 100%;
+
+  position: absolute;
+  top: 0;
+
+  display: flex;
+  -webkit-flex-direction: column;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+
+.wrap:after {
+  -webkit-box-flex: 1;
+  box-flex: 1;
+  -webkit-flex-grow: 1;
+  flex-grow: 1;
+
+  content: '';
+  display: block;
+  padding-top: 5%;
+}
+
+.wrap:before {
+  -webkit-box-flex: 1;
+  box-flex: 1;
+  -webkit-flex-grow: 1;
+  flex-grow: 1;
+
+  content: '';
+  display: block;
+  padding-top: 70px;
+}
+
+.box {
+  margin: 0 auto;
+  padding: 50px 30px;
+
+  background-color: #f4f4f4;
+  border-radius: 5px;
+}
+
+.layout {
+  width: 330px;
+  height: auto;
+}
+
+fieldset {
+  -webkit-margin-start: 0;
+  -webkit-margin-end: 0;
+  -webkit-padding-before: 0;
+  -webkit-padding-start: 0;
+  -webkit-padding-end: 0;
+  -webkit-padding-after: 0;
+
+  min-width: auto;
+
+  margin: 0;
+
+  border: none;
+}
+
+legend {
+  width: 100%;
+  height: 31px;
+
+  margin: 0 0 20px 0;
+  float: left;
+
+  font-size: 30px;
+  line-height: 30px;
+  font-weight: normal;
+  color: #3f8284;
+
+  -webkit-padding-start: 0;
+  -webkit-padding-end: 0;
+
+  user-select: none;
+}
+
+.full_width {
+  width: 100%;
+  float: left;
+}
+
+label {
+  margin: 10px 0;
+  float: left;
+
+  font-size: 16px;
+  line-height: 16px;
+  color: black;
+
+  opacity: 0.7;
+  user-select: none;
+}
+
+input[type="email"],
+input[type="password"] {
+  width: 100%;
+  height: 40px;
+
+  margin: 0 0 20px 0;
+  padding-left: 10px;
+  float: left;
+
+  border: 1px solid #d3d3d3;
+  border-radius: 3px;
+
+  box-sizing: border-box;
+}
+
+a {
+  color: #367aff;
+
+  cursor: pointer;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #367aff;
+}
+
+a:hover {
+  font-weight: 600;
+}
+
+.siginin_msg {
+  height: 16px;
+
+  margin: 0;
+  float: left;
+
+  font-size: 16px;
+  line-height: 16px;
+
+  user-select: none;
+}
+
+input[type="button"], #fg_ok {
+  width: 100%;
+  height: 50px;
+
+  margin: 18px 0 0 0;
+  float: left;
+
+  background-color: #3f8284;
+  border: none;
+  border-radius: 3px;
+
+  font-size: 18px;
+  color: #fff;
+
+  transition: 0.2s;
+  cursor: pointer;
+}
+
+input[type="button"]:hover, #fg_ok:hover {
+  background-color: #339999;
+}
+
+input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+
+  margin: 10px 0 0 0;
+  float: left;
+  cursor: pointer;
+}
+
+[for=yesrmb] {
+  height: 19px;
+
+  margin: 11px 0 0 8px;
+  float: left;
+
+  box-sizing: border-box;
+}
+
+.bar {
+  width: 100%;
+  height: 1px;
+
+  margin: 30px 0 10px 0;
+  float: left;
+
+  background-color: #d3d3d3;
+}
+
+#signup_now {
+  margin-left: 10px;
+}
+
+h2 {
+  width: 150px;
+  height: 23px;
+
+  margin: 0;
+  float: left;
+
+  background-image: url("../images/logos/metamorp.png");
+  background-position: left;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+button {
+  width: 48.5%;
+  height: 50px;
+
+  border: 2px solid #3f8284;
+  border-radius: 5px;
+
+  font-size: 18px;
+  color: #fff;
+
+  transition: 0.2s;
+  cursor: pointer;
+}
+
+#back, #fg_back {
+  float: left;
+  background-color: #fff;
+  color: #3f8284;
+}
+
+#back:hover, #fg_back:hover {
+  background-color: #339999;
+  border-color: #339999;
+  color: #fff;
+}
+
+#submit, #send {
+  float: right;
+
+  background-color: #3f8284;
+}
+
+#submit:hover, #send:hover {
+  background-color: #339999;
+  border-color: #339999;
+}
+
+.signup_alert, p.su_eml, p.fg_eml {
+  margin: 10px 0;
+  float: right;
+
+  font-size: 12px;
+  line-height: 16px;
+  color: #367aff;
+
+  user-select: none;
+}
+
+.helper {
+  margin: 3px 0 3px 0;
+  padding: 0 5px;
+  float: right;
+
+  font-size: 12px;
+  line-height: 16px;
+  color: rgba(0, 0, 0, 0.5);
+
+  border-radius: 8px;
+
+  cursor: pointer;
+  user-select: none;
+  transition: 0.2s;
+}
+
+.helper:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.helper:active {
+  background-color: rgba(0, 0, 0, 0.3);
+  color: rgba(255, 255, 255, 1.0);
+}
+
+.message, .forgot_message {
+  width: 100%;
+  height: 20px;
+
+  margin: 20px 0;
+  float: left;
+
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 400;
+
+  user-select: none;
+}
+
+.forgot_message {
+  margin: 0 0 20px 0;
+}
+
+p.alert_red {
+  color: rgba(255, 0, 0, 0.8);
+}
+
+input.alert_red {
+  border: 1px solid rgba(255, 0, 0, 0.5);
+}
+
+input.alert_red:focus {
+  outline: none;
+  box-shadow: 0 0 5px rgba(255, 0, 0, 0.5);
+}
+
+h3 {
+  color: rgba(0, 0, 0, 0.7);
+}
+
+.forgot_sucs p {
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.forgot_sucs span {
+  font-weight: 600;
+}
+
+.forgot_fail {
+  width: 100%;
+  float: left;
+  color: rgba(255, 0, 0, 0.7);
+}

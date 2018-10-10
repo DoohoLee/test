@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-125257549-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-125257549-1');
+    </script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-125332418-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-125332418-1');
+</script>
+    
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MORPWARE LCD-BASED SLA, DLP-BASED SLA 3D PRINTER SOFTWARE</title>
+    <meta name="description" content="누구나 3D프린터기를 일반 가전제품처럼. 메타몰프의 몰프웨어는 3D프린터 출력물의 기능과 용도에 따라 소프트웨어 솔루션을 제공하는 3D프린팅 엔진입니다.">
+    <link rel="stylesheet" href="css/main_style.css">
+    <link rel="shortcut icon" href="images/icons/title_icon.ico">
+    <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="js/user_session.js"></script>
+    <script src="js/index.js"></script>
+    <script>
+		$(function() {
+        	$.getJSON("https://api.ipify.org?format=jsonp&callback=?", function(json) {
+            	console.log("My public IP address is: ", json.ip);
+            });
+        });
+    </script>
+  </head>
+   <body>
+    <div class="wrap">
+      <div class="main">    <!--메인페이지-->
+        <div class="main_cover">
+          <div class="header">
+            <div class="layout">
+              <a href="/"><div class="logo_morpware_hor"></div></a>
+              <!--몰프웨어 로고-->
+              <a href="#" id="signOut"><div class="btn_signin">Sign out</div></a>
+              <a href="login" id="signIn"><div style="margin-right:10px;" class="btn_signin">Sign in</div></a>    <!--로그인 버튼-->
+              <a href="3D_Edit" id="edit"><div style="margin-right:10px;" class="btn_signin">3D_Edit</div></a>
+              <a href="admin" id="admin"><div class="btn_signin" style="margin-right:10px; width: 100px;" >Admin View</div></a>
+            </div>
+          </div>
+          <div class="main_txt">    <!--메인 문구-->
+            <div class="layout">
+              <div class="morpware_icon"></div>
+              <h1 class="main">MORPWARE</h1>
+              <h2 class="main">September, Demo Page coming soon.</h2>
+              <p class="main_mobile">출력할 때마다 달라지는 복잡한 설정과 3D 모델 데이터를 MORPWARE의 3D 슬라이서와 프로젝트 매니져를 통해 언제, 어디서나 손쉽게 관리할 수 있습니다.</p>
+              <p class="main">출력할 때마다 달라지는 복잡한 설정과 3D 모델 데이터를<br>MORPWARE의 3D 슬라이서와 프로젝트 매니져를 통해 언제, 어디서나 손쉽게 관리할 수 있습니다.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="bar"></div>
+      <div class="tech">    <!--기술 소개-->
+        <div class="slc">    <!--3D 모델 슬라이서-->
+          <div class="layout">
+            <div class="slc_txt">
+              <h3 class="tech">Cloud Computing Based</h3>
+              <h2 class="tech">3D MODEL SLICER</h2>
+              <p class="kor">MORPWARE는 웹 브라우저에서 사용되는 DLP기반 및 LCD기반 SLA3D프린터용 3D모델 슬라이서로, 모든 운영 체제에서 사용 가능한 강력한 3D프린팅 도구입니다.</p>
+              <p class="eng"><span>MORPWARE</span> is a 3D model slicer for DLP - based and LCD - based SLA 3D printers used in web browsers and it's a available and powerful 3D Printing tool on every operating systems.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="tech">    <!--기술 소개-->
+        <div class="cms">    <!--3D CMS-->
+          <div class="layout">
+            <div class="cms_txt">
+              <h3 class="tech">3D Printing Data Management & Storage</h3>
+              <h2 class="tech">3D CMS</h2>
+              <p class="kor">MORPWARE는 3D프린팅 히스토리를 관리, 분석할 수 있는 3D CMS를 제공합니다. 3D CMS를 통해 3D프린팅에 사용된 3D모델과 3D프린터 설정들을 관리하면 언제 어디서나, 데이터 유실 걱정없이 3D프린팅 히스토리를 관리 할 수 있습니다.</p>
+              <p class="eng"><span>MORPWARE</span> provides 3D CMS for managing and analyzing 3D printing history.The 3D CMS allows you to manage the 3D models and 3D printer settings used for 3D printing, anytime, anywhere, without worrying about losing data.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="imgs">    <!--가로 이미지 3장-->
+        <div class="layout"><div class="line"></div></div>
+        <div class="layout">
+          <div class="imgs_slc">    <!--3D 모델 슬라이서-->
+            <div class="imgs_slc_a imgs_rad"></div>
+            <h4 class="imgs">3D Model Slicer</h4>
+            <p class="imgs">Now you can generate support structures and slice 3d models on your browser.</p>
+          </div>
+          <div class="imgs_cms">    <!--3D CMS-->
+            <div class="imgs_cms_a imgs_rad"></div>
+            <h4 class="imgs">3D Contents management system</h4>
+            <p class="imgs">3D CMS helps you to manage your 3D printing history.</p>
+          </div>
+          <div class="imgs_anl">    <!--3D 모델 데이타 아날리시스-->
+            <div class="imgs_anl_a imgs_rad"></div>
+            <h4 class="imgs">3D Model data analysis</h4>
+            <p class="imgs">Befor printing your 3D model, check reference setup.</p>
+          </div>
+        </div>
+        <div class="layout"><div class="line"></div></div>
+      </div>
+      <div class="ptn">    <!--파트너스-->
+        <div class="layout_ptn">
+          <p class="ptn">Partners</p>    <!--파트너스 타이틀-->
+          <div class="logo_ptn">
+            <div class="nano"></div>
+            <div class="ryujinlab"></div>
+            <div class="illuminaid"></div>
+            <div class="gooo3d"></div>
+          </div>
+          <div class="send_msg">    <!--메세지 작성-->
+            <div class="morpware_vtc"></div>
+            <div class="input">
+              <form>
+                <input type="text" title="Your name" placeholder="YOUR NAME" id="name" class="send">
+                <input type="text" title="E-mail" placeholder="E-MAIL" id="eml" class="send">
+                <input type="text" title="Subject" placeholder="SUBJECT" id="sub" class="send">
+                <textarea title="Message" placeholder=" MESSAGE" id="msg"></textarea>
+                <input type="button" value="Send Message" id="btn_send">
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer">
+        <div class="layout">
+          <div class="footer_top">
+            <div class="nav">
+              <ul class="nav">
+                <li><a>개인정보</a></li>
+                <li><a>이용약관</a></li>
+                <li><a>(주)메타몰프</a></li>
+                <li class="metamorp"></li>
+              </ul>
+            </div>
+            <div class="info">
+              <h5>CALL</h5>
+              <ul class="info">
+                <li>(82) 10-9356-6679</li>
+              </ul>
+              <h5>E-MAIL</h5>
+              <ul class="info">
+                <li>enbywes@gmail.com</li>
+                <li>memo.osten@gmail.com</li>
+              </ul>
+              <h5>ADDRESS</h5>
+              <ul class="info">
+                <li>Joongsoguiupyeonsuwon, Danwon-gu,<br>Ansan-si, Gyeonggi-do, Republic of Korea</li>
+              </ul>
+            </div>
+            <div class="subscribe">
+              <h4 class="subscribe">SUBSCRIBE TO OUR NEWSLETTER</h4>
+              <p class="subscribe"><!--아직 내용 없음--></p>
+              <p class="subscribe"><!--아직 내용 없음--></p>
+              <!--몰프웨어 관련 인터넷 기사 있으면 이곳에 넣으면 될것 같음-->
+              <form>
+                <input type="text" title="Your email addres" placeholder="Your email address" id="eml_subs" class="subscribe"><input type="button" value="Subscribe" id="subs">
+              </form>
+              <div class="icons">
+                <div class="icon_facebook"></div>
+                <a href="https://www.instagram.com/morpware/" target="_blank"><div class="icon_instagram"></div></a>
+              </div>
+            </div>
+          </div>
+          <!--이 부분은 임시로 제외한 부분입니다.
+          언어 선택창인데, 현재로써는 필요가 없다고 생각되어 제외했습니다.
+          <select name="lang">
+            <option value="lang" selected>LANGUAGE</option>
+            <option value="kor">KOREAN</option>
+            <option value="eng">U.S.A</option>
+          </select>
+          -->
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
